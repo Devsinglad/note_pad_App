@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:note_taker/data/services/noteController.dart';
-import 'package:note_taker/res/responsiveness.dart';
 import 'package:note_taker/res/spacing/horizontal_spacing.dart';
 import 'package:note_taker/res/spacing/vertical_spacing.dart';
 import 'package:note_taker/views/Login/Login.dart';

@@ -51,6 +51,10 @@ class FirebaseService {
           "phone Number":phoneNumber,
         });
       });
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (_) => const Login()));
     } catch  (e) {
       if(e is FirebaseAuthException){
         if (e.code == 'email-already-in-use') {
@@ -73,7 +77,6 @@ class FirebaseService {
       Get.to(const Login());
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: MyText(title: 'Sign Out Successful',color: Colors.green,)));
 
-      // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Login()));
     } catch (e) {
       throw Exception('Failed to sign out: $e');
     }

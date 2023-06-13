@@ -111,7 +111,7 @@ class _SignUPState extends State<SignUP> {
                     ElevatedButton(
                       child: isLoading
                           ? const CircularProgressIndicator(
-                        //color: Brand.white,
+                        color: Colors.white,
                         strokeWidth: 2,
                       )
                           : MyText(
@@ -144,10 +144,7 @@ class _SignUPState extends State<SignUP> {
                         authenticate.fullNameController.clear();
                         authenticate.phoneNumber.clear();
                         authenticate.confirmPasswordController.clear();
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (_) => const Login()));
+
                       },
                     ),
                     AppVerticalSpacing.verticalSpacingM,
